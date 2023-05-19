@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Document</title>
+    <style>
+        .container {
+            height: 190px;
+            width: 150px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+        }
+
+        .d1 {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+        }
+
+        .d2 {
+            margin-left: 9px;
+        }
+
+        .b {
+            height: 20px;
+            width: 55px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="d2">Calculator</div>
+        <div class="d1">
+            <button onclick="calculation += '1';
+            console.log(calculation)">1</button>
+            <button onclick="calculation += '2';
+            console.log(calculation)">2</button>
+            <button onclick="calculation += '3';
+            console.log(calculation)">3</button>
+            <button onclick="calculation += '  + ';
+            console.log(calculation)">+</button>
+        </div>
+        <div class="d1">
+            <button onclick="calculation += '4';
+            console.log(calculation)">4</button>
+            <button onclick="calculation += '5';
+            console.log(calculation)">5</button>
+            <button onclick="calculation += '6';
+            console.log(calculation)">6</button>
+            <button onclick="calculation += ' - ';
+            console.log(calculation)">-</button>
+        </div>
+        <div class="d1">
+            <button onclick="calculation += '7';
+            console.log(calculation)">7</button>
+            <button onclick="calculation += '8';
+            console.log(calculation)">8</button>
+            <button onclick="calculation += '9';
+            console.log(calculation)">9</button>
+            <button onclick="calculation += ' * ';
+            console.log(calculation)">*</button>
+        </div>
+        <div class="d1">
+            <button onclick="calculation += '0';
+            console.log(calculation)">0</button>
+            <button onclick="calculation += '.';
+            console.log(calculation)">.</button>
+            <button onclick="calculation = eval(calculation);
+            console.log(calculation)">=</button>
+            <button onclick="calculation += ' / ';
+            console.log(calculation)">/</button>
+        </div>
+        <div class="d2">
+            <button class="b" onclick=" calculation = '';
+            console.log('Cleared.')">Clear</button>
+        </div>
+    </div>
+    <script>
+        let calculation = '';
+    </script>
+</body>
+
+</html>
